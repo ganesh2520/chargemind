@@ -1,0 +1,10 @@
+{
+  "name": "ChargeMind",
+  "description": "Smart EV charging station finder, real-time availability tracker, demand analysis dashboard, and AI-powered demand forecasting system.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

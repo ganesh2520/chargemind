@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom Google Maps Dark Styling & InfoWindow (Black, White & Emerald) */
+.gm-style .gm-style-iw-c {
+  background: rgba(9, 9, 11, 0.97) !important;
+  backdrop-filter: blur(12px) !important;
+  color: #ffffff !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(39, 39, 42, 0.9) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.75), 0 8px 10px -6px rgba(0, 0, 0, 0.7) !important;
+  padding: 0 !important;
+}
+
+.gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+  padding: 10px 14px !important;
+}
+
+.gm-style .gm-style-iw-tc::after {
+  background: #09090b !important;
+  border: 1px solid rgba(39, 39, 42, 0.9) !important;
+}
+
+.gm-style button.gm-ui-hover-effect {
+  filter: invert(1) !important;
+  top: 4px !important;
+  right: 4px !important;
+  opacity: 0.8 !important;
+}
+
+/* Custom Station Marker Styling */
+.custom-station-pin {
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.custom-station-pin:hover {
+  transform: scale(1.15) translateY(-4px);
+  z-index: 9999 !important;
+}
